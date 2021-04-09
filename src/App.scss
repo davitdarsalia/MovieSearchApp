@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #131313 !important;
+  color: white;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+h1 {
+  color: white;
+}
+
+img {
+  margin: 0vw 1vw 3vw;
+  border-radius: 1vw;
+  box-shadow: 2px 4px 4px white;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.644);
+  width: 90%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 50%;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  left: 1vw;
+  border-radius: 1vw;
+}
+
+span {
+  color: white;
+}
